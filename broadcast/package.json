@@ -1,0 +1,25 @@
+{
+  "name": "broadcast",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@noble/hashes": "^1.5.0",
+    "@solana/web3.js": "^1.98.4",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "txline-kit": "file:./vendor/txline-kit"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "address": "8GcrsgwxH4p4DzdBimyApwMex1DRwve8j3XiMWN9WbaD",
+  "metadata": {
+    "name": "tape_program",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "docs": [
+    "The Tape: a tamper-proof public record for forecasting agents.",
+    "",
+    "Survivorship bias dies here by construction:",
+    "1. A strategy registers BEFORE its window: params hash + expected cadence.",
+    "2. Every signal is committed (hash only) BEFORE the event it predicts.",
+    "3. After the event, the signal is revealed and must match its hash.",
+    "Gaps between expected and actual cadence are computable by anyone — a",
+    "strategy that only \"publishes the winners\" convicts itself on-chain."
+  ],
+  "instructions": [
+    {
+      "name": "commit_signal",
+      "discriminator": [
+        137,
+        14,
+        98,
+        40,
+        102,
+        88,
+        98,
+        135
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "strategy",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  116,
+                  114,
+                  97,
+                  116,
+                  101,
+                  103,
+                  121
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authority"
+              },
+              {
+                "kind": "account",
+                "path": "strategy.strategy_idx",
+                "account": "Strategy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "commitment",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  109,
+                  109,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "strategy"
+              },
+              {
+                "kind": "account",
+                "path": "strategy.signal_count",
+                "account": "Strategy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "payload_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "fixture_id",
+          "type": "u64"
+        },
+        {
+          "name": "event_deadline",
+          "type": "i64"
+        }
+      ]
+    },
+    {
+      "name": "register_strategy",
+      "discriminator": [
+        121,
+        12,
+        64,
+        75,
+        99,
+        15,
+        177,
+        143
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "strategy",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  116,
+                  114,
+                  97,
+                  116,
+                  101,
+                  103,
+                  121
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authority"
+              },
+              {
+                "kind": "arg",
+                "path": "strategy_idx"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "strategy_idx",
+          "type": "u16"
+        },
+        {
+          "name": "params_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "window_start",
+          "type": "i64"
+        },
+        {
+          "name": "window_end",
+          "type": "i64"
+        },
+        {
+          "name": "expected_signals_per_day",
+          "type": "u16"
+        }
+      ]
+    },
+    {
+      "name": "reveal_signal",
+      "docs": [
+        "Reveal after the event: payload must hash to the commitment.",
+        "The payload itself lives off-chain (dashboard hosts it); only its",
+        "keccak identity is checked here."
+      ],
+      "discriminator": [
+        224,
+        171,
+        21,
+        85,
+        195,
+        253,
+        227,
+        240
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "signer": true
+        },
+        {
+          "name": "commitment",
+          "writable": true
+        },
+        {
+          "name": "strategy"
+        }
+      ],
+      "args": [
+        {
+          "name": "payload",
+          "type": "bytes"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Commitment",
+      "discriminator": [
+        61,
+        112,
+        129,
+        128,
+        24,
+        147,
+        77,
+        87
+      ]
+    },
+    {
+      "name": "Strategy",
+      "discriminator": [
+        174,
+        110,
+        39,
+        119,
+        82,
+        106,
+        169,
+        102
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "SignalRevealed",
+      "discriminator": [
+        63,
+        108,
+        228,
+        79,
+        255,
+        239,
+        253,
+        121
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "BadWindow",
+      "msg": "Window start must precede end"
+    },
+    {
+      "code": 6001,
+      "name": "WindowAlreadyOpen",
+      "msg": "Registration must happen before the window opens"
+    },
+    {
+      "code": 6002,
+      "name": "OutsideWindow",
+      "msg": "Strategy window is not open"
+    },
+    {
+      "code": 6003,
+      "name": "TooLate",
+      "msg": "Cannot commit after the event deadline"
+    },
+    {
+      "code": 6004,
+      "name": "HashMismatch",
+      "msg": "Reveal does not match the committed hash"
+    },
+    {
+      "code": 6005,
+      "name": "AlreadyRevealed",
+      "msg": "Commitment already revealed"
+    },
+    {
+      "code": 6006,
+      "name": "WrongAuthority",
+      "msg": "Wrong authority"
+    },
+    {
+      "code": 6007,
+      "name": "Overflow",
+      "msg": "Arithmetic overflow"
+    }
+  ],
+  "types": [
+    {
+      "name": "Commitment",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "strategy",
+            "type": "pubkey"
+          },
+          {
+            "name": "seq",
+            "type": "u64"
+          },
+          {
+            "name": "payload_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "fixture_id",
+            "type": "u64"
+          },
+          {
+            "name": "event_deadline",
+            "type": "i64"
+          },
+          {
+            "name": "committed_at",
+            "type": "i64"
+          },
+          {
+            "name": "committed_slot",
+            "type": "u64"
+          },
+          {
+            "name": "revealed",
+            "type": "bool"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SignalRevealed",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "commitment",
+            "type": "pubkey"
+          },
+          {
+            "name": "strategy",
+            "type": "pubkey"
+          },
+          {
+            "name": "seq",
+            "type": "u64"
+          },
+          {
+            "name": "fixture_id",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Strategy",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "strategy_idx",
+            "type": "u16"
+          },
+          {
+            "name": "params_hash",
+            "docs": [
+              "keccak256 of the full parameter set — immutable for the window."
+            ],
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "window_start",
+            "type": "i64"
+          },
+          {
+            "name": "window_end",
+            "type": "i64"
+          },
+          {
+            "name": "expected_signals_per_day",
+            "docs": [
+              "Cadence promise: the anti-cherry-picking baseline."
+            ],
+            "type": "u16"
+          },
+          {
+            "name": "signal_count",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    }
+  ]
+}
