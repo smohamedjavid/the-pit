@@ -1,0 +1,14 @@
+{
+  "persona": "steamer",
+  "round": "replay-2",
+  "replay": true,
+  "fixtureId": 18143850,
+  "seq": "1",
+  "commitment": "Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE",
+  "commitmentLink": "https://explorer.solana.com/address/Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE?cluster=devnet",
+  "payloadHashHex": "87c23f67ed8fc1e8f158ff8e922fc786fa92a0a628f49eb28b21e618f62d7b9f",
+  "eventDeadline": 1784417990,
+  "committedAt": 1784416191,
+  "tx": "31tUaeNijvh3vrupwMWh1rwhJgiXztycNiKp8V3iMqtaEwa3ijugncSGR6RjRGr2wuFRmWh4NZBiT621FCFYtY6W",
+  "at": "2026-07-18T23:09:52.881Z"
+}

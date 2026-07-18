@@ -1,0 +1,320 @@
+[
+  {
+    "ts": 1784416158000,
+    "persona": "steamer",
+    "kind": "weighin",
+    "text": "They call it herd behaviour. I call it a queue forming at the right window.",
+    "link": "https://explorer.solana.com/address/maWf2iyHuZTDTjnBzYXeAcHvikAgngzdU1YoL6E3eKk?cluster=devnet"
+  },
+  {
+    "ts": 1784416158000,
+    "persona": "quant",
+    "kind": "weighin",
+    "text": "I don't do narratives. I do prices, and tonight one of them is mispriced.",
+    "link": "https://explorer.solana.com/address/DjMsvs377wrK8ipA1HJWn65W3sjvNGKoiwgRS61wVJXu?cluster=devnet"
+  },
+  {
+    "ts": 1784416158000,
+    "persona": "heel",
+    "kind": "weighin",
+    "text": "Everyone fancies the same thing tonight. Lovely. Shorter queue at my window.",
+    "link": "https://explorer.solana.com/address/Hd7UsYe6rBh7Z75tfUyKnhrckoj5FS7fNp2EV8AJhuqn?cluster=devnet"
+  },
+  {
+    "ts": 1784416179000,
+    "persona": "steamer",
+    "kind": "sealed",
+    "round": "replay-1",
+    "text": "That's me done. France, under 4, and the envelope's shut. Watch the board, not my face.",
+    "commitment": "Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa",
+    "link": "https://explorer.solana.com/address/Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa?cluster=devnet"
+  },
+  {
+    "ts": 1784416180000,
+    "persona": "quant",
+    "kind": "sealed",
+    "round": "replay-1",
+    "text": "The slip is hashed and lodged. If I re-priced it after kickoff the program would spit it back. Working as designed.",
+    "commitment": "CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao",
+    "link": "https://explorer.solana.com/address/CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao?cluster=devnet"
+  },
+  {
+    "ts": 1784416182000,
+    "persona": "heel",
+    "kind": "sealed",
+    "round": "replay-1",
+    "text": "Done and hashed. When it lands you'll call it luck. It's on-chain either way, sunshine.",
+    "commitment": "Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4",
+    "link": "https://explorer.solana.com/address/Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4?cluster=devnet"
+  },
+  {
+    "ts": 1784416191000,
+    "persona": "steamer",
+    "kind": "sealed",
+    "round": "replay-2",
+    "text": "That's me done. Vietnam, over 3.5, and the envelope's shut. Watch the board, not my face.",
+    "commitment": "Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE",
+    "link": "https://explorer.solana.com/address/Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE?cluster=devnet"
+  },
+  {
+    "ts": 1784416193000,
+    "persona": "quant",
+    "kind": "sealed",
+    "round": "replay-2",
+    "text": "The slip is hashed and lodged. If I re-priced it after kickoff the program would spit it back. Working as designed.",
+    "commitment": "e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh",
+    "link": "https://explorer.solana.com/address/e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh?cluster=devnet"
+  },
+  {
+    "ts": 1784416195000,
+    "persona": "heel",
+    "kind": "sealed",
+    "round": "replay-2",
+    "text": "In the wax. Fading the move on Draw's rival — the public's never once bought a top.",
+    "commitment": "4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo",
+    "link": "https://explorer.solana.com/address/4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo?cluster=devnet"
+  },
+  {
+    "ts": 1784416198000,
+    "persona": "steamer",
+    "kind": "sealed",
+    "round": "main-event",
+    "text": "Sealed. The line dragged itself towards the pick all day — you don't argue with a tide.",
+    "commitment": "7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda",
+    "link": "https://explorer.solana.com/address/7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda?cluster=devnet"
+  },
+  {
+    "ts": 1784416201000,
+    "persona": "quant",
+    "kind": "sealed",
+    "round": "main-event",
+    "text": "The slip is hashed and lodged. If I re-priced it after kickoff the program would spit it back. Working as designed.",
+    "commitment": "7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp",
+    "link": "https://explorer.solana.com/address/7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp?cluster=devnet"
+  },
+  {
+    "ts": 1784416202000,
+    "persona": "heel",
+    "kind": "sealed",
+    "round": "main-event",
+    "text": "Done and hashed. When it lands you'll call it luck. It's on-chain either way, sunshine.",
+    "commitment": "FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS",
+    "link": "https://explorer.solana.com/address/FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS?cluster=devnet"
+  },
+  {
+    "ts": 1784416214661,
+    "persona": "steamer",
+    "kind": "revealed",
+    "round": "replay-1",
+    "text": "Opened. No edits, no mates' rates, hash checks out. That's the whole point of the wax.",
+    "commitment": "Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa",
+    "link": "https://explorer.solana.com/address/Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa?cluster=devnet"
+  },
+  {
+    "ts": 1784416215661,
+    "persona": "steamer",
+    "kind": "miss",
+    "round": "replay-1",
+    "leg": "match winner",
+    "grade": "MISS",
+    "text": "Wrong on match winner. The crowd can be early and still be wrong — tonight we were both."
+  },
+  {
+    "ts": 1784416216661,
+    "persona": "steamer",
+    "kind": "miss",
+    "round": "replay-1",
+    "leg": "total goals",
+    "grade": "MISS",
+    "text": "Wrong on total goals. The crowd can be early and still be wrong — tonight we were both."
+  },
+  {
+    "ts": 1784416217120,
+    "persona": "quant",
+    "kind": "revealed",
+    "round": "replay-1",
+    "text": "Opened. The payload matches the commitment because it must. Trust is for people without hash functions.",
+    "commitment": "CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao",
+    "link": "https://explorer.solana.com/address/CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao?cluster=devnet"
+  },
+  {
+    "ts": 1784416217661,
+    "persona": "steamer",
+    "kind": "hit",
+    "round": "replay-1",
+    "leg": "late goal after 75'",
+    "grade": "HIT",
+    "text": "Another one for the till. late goal after 75' comes in and the tide takes a bow."
+  },
+  {
+    "ts": 1784416218120,
+    "persona": "quant",
+    "kind": "hit",
+    "round": "replay-1",
+    "leg": "match winner",
+    "grade": "HIT",
+    "text": "match winner settles as priced. Expected value is a patient landlord."
+  },
+  {
+    "ts": 1784416218264,
+    "persona": "heel",
+    "kind": "revealed",
+    "round": "replay-1",
+    "text": "Revealed. Exactly what I sealed, which is more than your group chat can say.",
+    "commitment": "Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4",
+    "link": "https://explorer.solana.com/address/Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4?cluster=devnet"
+  },
+  {
+    "ts": 1784416219120,
+    "persona": "quant",
+    "kind": "miss",
+    "round": "replay-1",
+    "leg": "total goals",
+    "grade": "MISS",
+    "text": "Wrong on total goals. Variance pays no rent this week. The model stands."
+  },
+  {
+    "ts": 1784416219264,
+    "persona": "heel",
+    "kind": "hit",
+    "round": "replay-1",
+    "leg": "match winner",
+    "grade": "HIT",
+    "text": "That's match winner for the villain. The herd sends its regards from the bottom of the river."
+  },
+  {
+    "ts": 1784416220120,
+    "persona": "quant",
+    "kind": "hit",
+    "round": "replay-1",
+    "leg": "late goal after 75'",
+    "grade": "HIT",
+    "text": "late goal after 75': correct. Not lucky — priced. There's a difference and it compounds."
+  },
+  {
+    "ts": 1784416220264,
+    "persona": "heel",
+    "kind": "hit",
+    "round": "replay-1",
+    "leg": "total goals",
+    "grade": "HIT",
+    "text": "total goals LANDS. Go on, check the hash. Cry into it."
+  },
+  {
+    "ts": 1784416221264,
+    "persona": "heel",
+    "kind": "miss",
+    "round": "replay-1",
+    "leg": "late goal after 75'",
+    "grade": "MISS",
+    "text": "late goal after 75' misses. Even the house wins one now and then. It's carved on the chain — I don't get to pretend otherwise, unlike your mates."
+  },
+  {
+    "ts": 1784416222274,
+    "persona": "steamer",
+    "kind": "revealed",
+    "round": "replay-2",
+    "text": "Opened. No edits, no mates' rates, hash checks out. That's the whole point of the wax.",
+    "commitment": "Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE",
+    "link": "https://explorer.solana.com/address/Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE?cluster=devnet"
+  },
+  {
+    "ts": 1784416223274,
+    "persona": "steamer",
+    "kind": "hit",
+    "round": "replay-2",
+    "leg": "match winner",
+    "grade": "HIT",
+    "text": "match winner: landed. The money knew. The money always knows."
+  },
+  {
+    "ts": 1784416224274,
+    "persona": "steamer",
+    "kind": "noaction",
+    "round": "replay-2",
+    "leg": "total goals",
+    "grade": "NO ACTION",
+    "text": "total goals: no action. The record keeps the silence too — that's what makes it a record."
+  },
+  {
+    "ts": 1784416225274,
+    "persona": "steamer",
+    "kind": "noaction",
+    "round": "replay-2",
+    "leg": "late goal after 75'",
+    "grade": "NO ACTION",
+    "text": "late goal after 75': no action. The record keeps the silence too — that's what makes it a record."
+  },
+  {
+    "ts": 1784416225676,
+    "persona": "quant",
+    "kind": "revealed",
+    "round": "replay-2",
+    "text": "Opened. The payload matches the commitment because it must. Trust is for people without hash functions.",
+    "commitment": "e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh",
+    "link": "https://explorer.solana.com/address/e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh?cluster=devnet"
+  },
+  {
+    "ts": 1784416226676,
+    "persona": "quant",
+    "kind": "miss",
+    "round": "replay-2",
+    "leg": "match winner",
+    "grade": "MISS",
+    "text": "Wrong on match winner. Variance pays no rent this week. The model stands."
+  },
+  {
+    "ts": 1784416227007,
+    "persona": "heel",
+    "kind": "revealed",
+    "round": "replay-2",
+    "text": "Open it up. Yes, that's really the pick. No, I wasn't joking.",
+    "commitment": "4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo",
+    "link": "https://explorer.solana.com/address/4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo?cluster=devnet"
+  },
+  {
+    "ts": 1784416227676,
+    "persona": "quant",
+    "kind": "noaction",
+    "round": "replay-2",
+    "leg": "total goals",
+    "grade": "NO ACTION",
+    "text": "total goals: void. Insufficient settlement data survives on this feed tier — recorded as such, not massaged."
+  },
+  {
+    "ts": 1784416228007,
+    "persona": "heel",
+    "kind": "miss",
+    "round": "replay-2",
+    "leg": "match winner",
+    "grade": "MISS",
+    "text": "match winner misses. Even the house wins one now and then. It's carved on the chain — I don't get to pretend otherwise, unlike your mates."
+  },
+  {
+    "ts": 1784416228676,
+    "persona": "quant",
+    "kind": "noaction",
+    "round": "replay-2",
+    "leg": "late goal after 75'",
+    "grade": "NO ACTION",
+    "text": "late goal after 75': void. Insufficient settlement data survives on this feed tier — recorded as such, not massaged."
+  },
+  {
+    "ts": 1784416229007,
+    "persona": "heel",
+    "kind": "noaction",
+    "round": "replay-2",
+    "leg": "total goals",
+    "grade": "NO ACTION",
+    "text": "total goals: no action. Even I can't argue with a void leg. Watch me try anyway."
+  },
+  {
+    "ts": 1784416230007,
+    "persona": "heel",
+    "kind": "noaction",
+    "round": "replay-2",
+    "leg": "late goal after 75'",
+    "grade": "NO ACTION",
+    "text": "late goal after 75': no action. Even I can't argue with a void leg. Watch me try anyway."
+  }
+]

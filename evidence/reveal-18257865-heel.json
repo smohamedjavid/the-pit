@@ -1,0 +1,26 @@
+{
+  "persona": "heel",
+  "round": "replay-1",
+  "fixtureId": 18257865,
+  "seq": "0",
+  "commitment": "Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4",
+  "commitmentLink": "https://explorer.solana.com/address/Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784408400000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"France v England\",\"fixtureId\":18257865,\"kickoffMs\":1784408400000,\"persona\":\"heel\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.599,\"yes\":false},\"matchWinner\":{\"prob\":0.209,\"side\":\"away\",\"team\":\"England\"},\"totalGoals\":{\"line\":4,\"prob\":0.31,\"side\":\"over\"}},\"rationale\":\"The herd dumped England for France. Herds drown. I'll take the side they left warm.\",\"replay\":true,\"round\":\"replay-1\",\"salt\":\"cd0da8ed15e7407003f5fbf05abc49ac\",\"v\":1}",
+  "payloadHashHex": "988d63a2b0d0e3c3ceb429012f82a2d5dc3ba7816a252a33c311043881252471",
+  "revealTx": "V3c5aozABPSznsV2FMUWh3aGBJrhoxrgLhifAnUUoumKhsm8kGSwr8wrKqtdpFzKGkAarmVv6u6SpHmD6aMt4oU",
+  "grades": {
+    "source": "txline-scores",
+    "matchWinner": "HIT",
+    "totalGoals": "HIT",
+    "lateGoalAfter75": "MISS",
+    "brier": 0.4869,
+    "detail": {
+      "homeGoals90": 4,
+      "awayGoals90": 6,
+      "resultSide": "away",
+      "totalGoals90": 10,
+      "lateGoal": true
+    }
+  },
+  "at": "2026-07-18T23:10:18.264Z"
+}

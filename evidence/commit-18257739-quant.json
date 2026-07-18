@@ -1,0 +1,14 @@
+{
+  "persona": "quant",
+  "round": "main-event",
+  "replay": false,
+  "fixtureId": 18257739,
+  "seq": "2",
+  "commitment": "7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp",
+  "commitmentLink": "https://explorer.solana.com/address/7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp?cluster=devnet",
+  "payloadHashHex": "7d6a6c021579af795c9efac86980a7d344b59361194ce0acaa9cacea61782f16",
+  "eventDeadline": 1784487600,
+  "committedAt": 1784416201,
+  "tx": "3Q7uTMkV13PfFrAWpw9J3PrnmPRmwtWWFXuDEbgx93cBe299HBnnLuE7Tro984hBoHZV3Wz4wSZwd3K5o9YAymd2",
+  "at": "2026-07-18T23:10:02.293Z"
+}

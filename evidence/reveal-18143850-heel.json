@@ -1,0 +1,26 @@
+{
+  "persona": "heel",
+  "round": "replay-2",
+  "fixtureId": 18143850,
+  "seq": "1",
+  "commitment": "4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo",
+  "commitmentLink": "https://explorer.solana.com/address/4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784376000000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Vietnam v Myanmar\",\"fixtureId\":18143850,\"kickoffMs\":1784376000000,\"persona\":\"heel\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.59,\"yes\":false},\"matchWinner\":{\"prob\":0.089,\"side\":\"draw\",\"team\":\"Draw\"},\"totalGoals\":{\"line\":3.5,\"prob\":0.483,\"side\":\"under\"}},\"rationale\":\"The herd dumped Draw for Vietnam. Herds drown. I'll take the side they left warm.\",\"replay\":true,\"round\":\"replay-2\",\"salt\":\"5dfe9e1e877f37e63ae81a73d9251064\",\"v\":1}",
+  "payloadHashHex": "b8258d3dd74e70da39f2ed35bd71d444b744c42f61d730cf6c1e1332c0f587f4",
+  "revealTx": "3QM87q3zLyWg7mGMbdbEhvUBMv26ZJ24gSe8SHpCBVZLnf6kpzGCqs5fVQ6MNVXje5HRsVFvvRfGYkL5zocvq1Qf",
+  "grades": {
+    "source": "market-close",
+    "matchWinner": "MISS",
+    "totalGoals": "NO ACTION",
+    "lateGoalAfter75": "NO ACTION",
+    "brier": 0.0079,
+    "detail": {
+      "homeGoals90": null,
+      "awayGoals90": null,
+      "resultSide": "home",
+      "totalGoals90": null,
+      "lateGoal": null
+    }
+  },
+  "at": "2026-07-18T23:10:27.007Z"
+}

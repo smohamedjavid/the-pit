@@ -1,0 +1,26 @@
+{
+  "persona": "steamer",
+  "round": "replay-2",
+  "fixtureId": 18143850,
+  "seq": "1",
+  "commitment": "Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE",
+  "commitmentLink": "https://explorer.solana.com/address/Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784376000000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Vietnam v Myanmar\",\"fixtureId\":18143850,\"kickoffMs\":1784376000000,\"persona\":\"steamer\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.755,\"yes\":true},\"matchWinner\":{\"prob\":0.87,\"side\":\"home\",\"team\":\"Vietnam\"},\"totalGoals\":{\"line\":3.5,\"prob\":0.517,\"side\":\"over\"}},\"rationale\":\"Money moved 714bps onto Vietnam in six hours. I go where it goes.\",\"replay\":true,\"round\":\"replay-2\",\"salt\":\"8613018fe65e11a688f57bbb928441dd\",\"v\":1}",
+  "payloadHashHex": "87c23f67ed8fc1e8f158ff8e922fc786fa92a0a628f49eb28b21e618f62d7b9f",
+  "revealTx": "tGBLVzYbvw1zqhpDH7pEZMGqFvW3BzfcEmDYWpNmBBKTB3Wq9Ekr94dxDY6vDpShkjFxvSWLYSWsa9mTrAWGZx3",
+  "grades": {
+    "source": "market-close",
+    "matchWinner": "HIT",
+    "totalGoals": "NO ACTION",
+    "lateGoalAfter75": "NO ACTION",
+    "brier": 0.0169,
+    "detail": {
+      "homeGoals90": null,
+      "awayGoals90": null,
+      "resultSide": "home",
+      "totalGoals90": null,
+      "lateGoal": null
+    }
+  },
+  "at": "2026-07-18T23:10:22.275Z"
+}

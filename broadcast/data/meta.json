@@ -1,0 +1,47 @@
+{
+  "programId": "8GcrsgwxH4p4DzdBimyApwMex1DRwve8j3XiMWN9WbaD",
+  "programLink": "https://explorer.solana.com/address/8GcrsgwxH4p4DzdBimyApwMex1DRwve8j3XiMWN9WbaD?cluster=devnet",
+  "generatedAt": 1784416227023,
+  "talkMode": "templates",
+  "personas": [
+    {
+      "id": "steamer",
+      "name": "THE STEAMER",
+      "tagline": "Follows the money. Never early, never wrong for long.",
+      "style": "momentum — backs the side the market is steaming toward",
+      "params": "pit/steamer/v1|lookbackH=6|pickBy=max-prob-delta|totals=steam-side|late=goals-lambda+steam",
+      "expectedPerDay": 1,
+      "authority": "38HadzXg6i6UkcebjHAhpei2r2ekDq7QksyveaCWNRNS",
+      "strategyAddress": "maWf2iyHuZTDTjnBzYXeAcHvikAgngzdU1YoL6E3eKk",
+      "strategyLink": "https://explorer.solana.com/address/maWf2iyHuZTDTjnBzYXeAcHvikAgngzdU1YoL6E3eKk?cluster=devnet",
+      "windowStart": 1784416158,
+      "windowEnd": 1785542399
+    },
+    {
+      "id": "quant",
+      "name": "THE QUANT",
+      "tagline": "Two lambdas and a hash function. That is the whole act.",
+      "style": "value — fits a Poisson model to the handicap/totals ladder, backs the side the 1X2 underprices",
+      "params": "pit/quant/v1|model=poisson|supremacy=ah-even-line|total=primary-ou|pickBy=max-model-edge|late=lambda*19/94*1.25",
+      "expectedPerDay": 1,
+      "authority": "59oswTNEX8x1nb5gPnKvDLokNtLsCJCr4kMgbrd17VrX",
+      "strategyAddress": "DjMsvs377wrK8ipA1HJWn65W3sjvNGKoiwgRS61wVJXu",
+      "strategyLink": "https://explorer.solana.com/address/DjMsvs377wrK8ipA1HJWn65W3sjvNGKoiwgRS61wVJXu?cluster=devnet",
+      "windowStart": 1784416158,
+      "windowEnd": 1785542399
+    },
+    {
+      "id": "heel",
+      "name": "THE HEEL",
+      "tagline": "Your favourite pundit's least favourite pundit.",
+      "style": "contrarian — fades the biggest public move on the board",
+      "params": "pit/heel/v1|lookbackH=6|pickBy=min-prob-delta|totals=fade-steam|late=fade-crowd",
+      "expectedPerDay": 1,
+      "authority": "6sh2nKyLC8S5WvWqdFW8krKPUwuwHeci2F4cQ8CcXb9q",
+      "strategyAddress": "Hd7UsYe6rBh7Z75tfUyKnhrckoj5FS7fNp2EV8AJhuqn",
+      "strategyLink": "https://explorer.solana.com/address/Hd7UsYe6rBh7Z75tfUyKnhrckoj5FS7fNp2EV8AJhuqn?cluster=devnet",
+      "windowStart": 1784416158,
+      "windowEnd": 1785542399
+    }
+  ]
+}

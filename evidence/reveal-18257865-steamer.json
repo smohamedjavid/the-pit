@@ -1,0 +1,26 @@
+{
+  "persona": "steamer",
+  "round": "replay-1",
+  "fixtureId": 18257865,
+  "seq": "0",
+  "commitment": "Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa",
+  "commitmentLink": "https://explorer.solana.com/address/Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784408400000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"France v England\",\"fixtureId\":18257865,\"kickoffMs\":1784408400000,\"persona\":\"steamer\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.576,\"yes\":true},\"matchWinner\":{\"prob\":0.569,\"side\":\"home\",\"team\":\"France\"},\"totalGoals\":{\"line\":4,\"prob\":0.69,\"side\":\"under\"}},\"rationale\":\"Money moved 489bps onto France in six hours. I go where it goes.\",\"replay\":true,\"round\":\"replay-1\",\"salt\":\"0065542786f522977b275077cf57788e\",\"v\":1}",
+  "payloadHashHex": "bd1fabc66579af6c9ffc3d842bf00f8fdb2eff1671294a0c4d246ebeb278c0d5",
+  "revealTx": "nW4A1tVDcrGyrV3bygxvKdNxZNUaKAKj36tNy2kih1wtht2kGMSVX7SBbaA2sP7NEhmqh7S5wLrooyRAQFSnZ9e",
+  "grades": {
+    "source": "txline-scores",
+    "matchWinner": "MISS",
+    "totalGoals": "MISS",
+    "lateGoalAfter75": "HIT",
+    "brier": 0.3265,
+    "detail": {
+      "homeGoals90": 4,
+      "awayGoals90": 6,
+      "resultSide": "away",
+      "totalGoals90": 10,
+      "lateGoal": true
+    }
+  },
+  "at": "2026-07-18T23:10:14.662Z"
+}

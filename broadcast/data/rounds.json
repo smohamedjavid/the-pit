@@ -1,0 +1,395 @@
+[
+  {
+    "id": "replay-1",
+    "label": "Replay I — France v England",
+    "replay": true,
+    "fixtureId": 18257865,
+    "fixture": "France v England",
+    "home": "France",
+    "away": "England",
+    "kickoffMs": 1784408400000,
+    "cutoffMs": 1784408400000,
+    "slips": {
+      "steamer": {
+        "hashHex": "bd1fabc66579af6c9ffc3d842bf00f8fdb2eff1671294a0c4d246ebeb278c0d5",
+        "seq": "0",
+        "commitment": "Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa",
+        "commitmentLink": "https://explorer.solana.com/address/Ej3NorWfnh6tW7eaAUPqCGDqBiW5bRiWgFfNYjiq2ZQa?cluster=devnet",
+        "committedAt": 1784416179,
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "steamer",
+          "round": "replay-1",
+          "replay": true,
+          "fixtureId": 18257865,
+          "fixture": "France v England",
+          "kickoffMs": 1784408400000,
+          "picks": {
+            "matchWinner": {
+              "side": "home",
+              "team": "France",
+              "prob": 0.569
+            },
+            "totalGoals": {
+              "line": 4,
+              "side": "under",
+              "prob": 0.69
+            },
+            "lateGoalAfter75": {
+              "yes": true,
+              "prob": 0.576
+            }
+          },
+          "rationale": "Money moved 489bps onto France in six hours. I go where it goes.",
+          "basis": {
+            "asOfMs": 1784408400000,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "0065542786f522977b275077cf57788e"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784408400000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"France v England\",\"fixtureId\":18257865,\"kickoffMs\":1784408400000,\"persona\":\"steamer\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.576,\"yes\":true},\"matchWinner\":{\"prob\":0.569,\"side\":\"home\",\"team\":\"France\"},\"totalGoals\":{\"line\":4,\"prob\":0.69,\"side\":\"under\"}},\"rationale\":\"Money moved 489bps onto France in six hours. I go where it goes.\",\"replay\":true,\"round\":\"replay-1\",\"salt\":\"0065542786f522977b275077cf57788e\",\"v\":1}",
+        "grades": {
+          "source": "txline-scores",
+          "matchWinner": "MISS",
+          "totalGoals": "MISS",
+          "lateGoalAfter75": "HIT",
+          "brier": 0.3265,
+          "detail": {
+            "homeGoals90": 4,
+            "awayGoals90": 6,
+            "resultSide": "away",
+            "totalGoals90": 10,
+            "lateGoal": true
+          }
+        },
+        "revealTx": "nW4A1tVDcrGyrV3bygxvKdNxZNUaKAKj36tNy2kih1wtht2kGMSVX7SBbaA2sP7NEhmqh7S5wLrooyRAQFSnZ9e"
+      },
+      "quant": {
+        "hashHex": "30115a49fc2b86039e2064cf1c203059872b2684f8230cf9333d72cf1faa47f3",
+        "seq": "0",
+        "commitment": "CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao",
+        "commitmentLink": "https://explorer.solana.com/address/CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao?cluster=devnet",
+        "committedAt": 1784416180,
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "quant",
+          "round": "replay-1",
+          "replay": true,
+          "fixtureId": 18257865,
+          "fixture": "France v England",
+          "kickoffMs": 1784408400000,
+          "picks": {
+            "matchWinner": {
+              "side": "away",
+              "team": "England",
+              "prob": 0.249
+            },
+            "totalGoals": {
+              "line": 4,
+              "side": "under",
+              "prob": 0.703
+            },
+            "lateGoalAfter75": {
+              "yes": true,
+              "prob": 0.599
+            }
+          },
+          "rationale": "Two Poissons fitted to the handicap ladder make England 24.9%; the 1X2 says 20.9%. That is 403 basis points the market is giving away.",
+          "basis": {
+            "asOfMs": 1784408400000,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "50256dbef2da8d361a011095aed9b1e3"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784408400000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"France v England\",\"fixtureId\":18257865,\"kickoffMs\":1784408400000,\"persona\":\"quant\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.599,\"yes\":true},\"matchWinner\":{\"prob\":0.249,\"side\":\"away\",\"team\":\"England\"},\"totalGoals\":{\"line\":4,\"prob\":0.703,\"side\":\"under\"}},\"rationale\":\"Two Poissons fitted to the handicap ladder make England 24.9%; the 1X2 says 20.9%. That is 403 basis points the market is giving away.\",\"replay\":true,\"round\":\"replay-1\",\"salt\":\"50256dbef2da8d361a011095aed9b1e3\",\"v\":1}",
+        "grades": {
+          "source": "txline-scores",
+          "matchWinner": "HIT",
+          "totalGoals": "MISS",
+          "lateGoalAfter75": "HIT",
+          "brier": 0.4063,
+          "detail": {
+            "homeGoals90": 4,
+            "awayGoals90": 6,
+            "resultSide": "away",
+            "totalGoals90": 10,
+            "lateGoal": true
+          }
+        },
+        "revealTx": "4hvLRNaR1oKfa95P2i1aus4LnNuuA2qQh28XNRbmWRDhwoiP45B6bZfgMrVU93Bei34ar8uC9NKuaLBrmb6QayTE"
+      },
+      "heel": {
+        "hashHex": "988d63a2b0d0e3c3ceb429012f82a2d5dc3ba7816a252a33c311043881252471",
+        "seq": "0",
+        "commitment": "Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4",
+        "commitmentLink": "https://explorer.solana.com/address/Cz4tV8N1w8NqnkgxVg3Y2o85C8ZA9Xfh5JhwhNdvb5A4?cluster=devnet",
+        "committedAt": 1784416182,
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "heel",
+          "round": "replay-1",
+          "replay": true,
+          "fixtureId": 18257865,
+          "fixture": "France v England",
+          "kickoffMs": 1784408400000,
+          "picks": {
+            "matchWinner": {
+              "side": "away",
+              "team": "England",
+              "prob": 0.209
+            },
+            "totalGoals": {
+              "line": 4,
+              "side": "over",
+              "prob": 0.31
+            },
+            "lateGoalAfter75": {
+              "yes": false,
+              "prob": 0.599
+            }
+          },
+          "rationale": "The herd dumped England for France. Herds drown. I'll take the side they left warm.",
+          "basis": {
+            "asOfMs": 1784408400000,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "cd0da8ed15e7407003f5fbf05abc49ac"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784408400000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"France v England\",\"fixtureId\":18257865,\"kickoffMs\":1784408400000,\"persona\":\"heel\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.599,\"yes\":false},\"matchWinner\":{\"prob\":0.209,\"side\":\"away\",\"team\":\"England\"},\"totalGoals\":{\"line\":4,\"prob\":0.31,\"side\":\"over\"}},\"rationale\":\"The herd dumped England for France. Herds drown. I'll take the side they left warm.\",\"replay\":true,\"round\":\"replay-1\",\"salt\":\"cd0da8ed15e7407003f5fbf05abc49ac\",\"v\":1}",
+        "grades": {
+          "source": "txline-scores",
+          "matchWinner": "HIT",
+          "totalGoals": "HIT",
+          "lateGoalAfter75": "MISS",
+          "brier": 0.4869,
+          "detail": {
+            "homeGoals90": 4,
+            "awayGoals90": 6,
+            "resultSide": "away",
+            "totalGoals90": 10,
+            "lateGoal": true
+          }
+        },
+        "revealTx": "V3c5aozABPSznsV2FMUWh3aGBJrhoxrgLhifAnUUoumKhsm8kGSwr8wrKqtdpFzKGkAarmVv6u6SpHmD6aMt4oU"
+      }
+    }
+  },
+  {
+    "id": "replay-2",
+    "label": "Replay II — Vietnam v Myanmar",
+    "replay": true,
+    "fixtureId": 18143850,
+    "fixture": "Vietnam v Myanmar",
+    "home": "Vietnam",
+    "away": "Myanmar",
+    "kickoffMs": 1784376000000,
+    "cutoffMs": 1784376000000,
+    "slips": {
+      "steamer": {
+        "hashHex": "87c23f67ed8fc1e8f158ff8e922fc786fa92a0a628f49eb28b21e618f62d7b9f",
+        "seq": "1",
+        "commitment": "Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE",
+        "commitmentLink": "https://explorer.solana.com/address/Fvr6eCTCMahnBJ5yMed3qFtystYqxYGhAqR1uk8Y67iE?cluster=devnet",
+        "committedAt": 1784416191,
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "steamer",
+          "round": "replay-2",
+          "replay": true,
+          "fixtureId": 18143850,
+          "fixture": "Vietnam v Myanmar",
+          "kickoffMs": 1784376000000,
+          "picks": {
+            "matchWinner": {
+              "side": "home",
+              "team": "Vietnam",
+              "prob": 0.87
+            },
+            "totalGoals": {
+              "line": 3.5,
+              "side": "over",
+              "prob": 0.517
+            },
+            "lateGoalAfter75": {
+              "yes": true,
+              "prob": 0.755
+            }
+          },
+          "rationale": "Money moved 714bps onto Vietnam in six hours. I go where it goes.",
+          "basis": {
+            "asOfMs": 1784376000000,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "8613018fe65e11a688f57bbb928441dd"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784376000000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Vietnam v Myanmar\",\"fixtureId\":18143850,\"kickoffMs\":1784376000000,\"persona\":\"steamer\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.755,\"yes\":true},\"matchWinner\":{\"prob\":0.87,\"side\":\"home\",\"team\":\"Vietnam\"},\"totalGoals\":{\"line\":3.5,\"prob\":0.517,\"side\":\"over\"}},\"rationale\":\"Money moved 714bps onto Vietnam in six hours. I go where it goes.\",\"replay\":true,\"round\":\"replay-2\",\"salt\":\"8613018fe65e11a688f57bbb928441dd\",\"v\":1}",
+        "grades": {
+          "source": "market-close",
+          "matchWinner": "HIT",
+          "totalGoals": "NO ACTION",
+          "lateGoalAfter75": "NO ACTION",
+          "brier": 0.0169,
+          "detail": {
+            "homeGoals90": null,
+            "awayGoals90": null,
+            "resultSide": "home",
+            "totalGoals90": null,
+            "lateGoal": null
+          }
+        },
+        "revealTx": "tGBLVzYbvw1zqhpDH7pEZMGqFvW3BzfcEmDYWpNmBBKTB3Wq9Ekr94dxDY6vDpShkjFxvSWLYSWsa9mTrAWGZx3"
+      },
+      "quant": {
+        "hashHex": "86f87fc41fb1ba5b2e91e517d681779a19c52241a1cb18d953a4864b8ee5c818",
+        "seq": "1",
+        "commitment": "e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh",
+        "commitmentLink": "https://explorer.solana.com/address/e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh?cluster=devnet",
+        "committedAt": 1784416193,
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "quant",
+          "round": "replay-2",
+          "replay": true,
+          "fixtureId": 18143850,
+          "fixture": "Vietnam v Myanmar",
+          "kickoffMs": 1784376000000,
+          "picks": {
+            "matchWinner": {
+              "side": "draw",
+              "team": "Draw",
+              "prob": 0.096
+            },
+            "totalGoals": {
+              "line": 3.5,
+              "side": "under",
+              "prob": 0.529
+            },
+            "lateGoalAfter75": {
+              "yes": true,
+              "prob": 0.59
+            }
+          },
+          "rationale": "Two Poissons fitted to the handicap ladder make Draw 9.6%; the 1X2 says 8.9%. That is 66 basis points the market is giving away.",
+          "basis": {
+            "asOfMs": 1784376000000,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "452b40e40bfa5da6a6c0a870512c594b"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784376000000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Vietnam v Myanmar\",\"fixtureId\":18143850,\"kickoffMs\":1784376000000,\"persona\":\"quant\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.59,\"yes\":true},\"matchWinner\":{\"prob\":0.096,\"side\":\"draw\",\"team\":\"Draw\"},\"totalGoals\":{\"line\":3.5,\"prob\":0.529,\"side\":\"under\"}},\"rationale\":\"Two Poissons fitted to the handicap ladder make Draw 9.6%; the 1X2 says 8.9%. That is 66 basis points the market is giving away.\",\"replay\":true,\"round\":\"replay-2\",\"salt\":\"452b40e40bfa5da6a6c0a870512c594b\",\"v\":1}",
+        "grades": {
+          "source": "market-close",
+          "matchWinner": "MISS",
+          "totalGoals": "NO ACTION",
+          "lateGoalAfter75": "NO ACTION",
+          "brier": 0.0092,
+          "detail": {
+            "homeGoals90": null,
+            "awayGoals90": null,
+            "resultSide": "home",
+            "totalGoals90": null,
+            "lateGoal": null
+          }
+        },
+        "revealTx": "61YcGhxqTJQ8dd3pynCJ2bAnwyxFoJ2EBJUeReQ6NCjkkcS3S2Vna6QUn1wztVLbMdiVgSmRPpkgpsQzp3hTND2p"
+      },
+      "heel": {
+        "hashHex": "b8258d3dd74e70da39f2ed35bd71d444b744c42f61d730cf6c1e1332c0f587f4",
+        "seq": "1",
+        "commitment": "4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo",
+        "commitmentLink": "https://explorer.solana.com/address/4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo?cluster=devnet",
+        "committedAt": 1784416195,
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "heel",
+          "round": "replay-2",
+          "replay": true,
+          "fixtureId": 18143850,
+          "fixture": "Vietnam v Myanmar",
+          "kickoffMs": 1784376000000,
+          "picks": {
+            "matchWinner": {
+              "side": "draw",
+              "team": "Draw",
+              "prob": 0.089
+            },
+            "totalGoals": {
+              "line": 3.5,
+              "side": "under",
+              "prob": 0.483
+            },
+            "lateGoalAfter75": {
+              "yes": false,
+              "prob": 0.59
+            }
+          },
+          "rationale": "The herd dumped Draw for Vietnam. Herds drown. I'll take the side they left warm.",
+          "basis": {
+            "asOfMs": 1784376000000,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "5dfe9e1e877f37e63ae81a73d9251064"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784376000000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Vietnam v Myanmar\",\"fixtureId\":18143850,\"kickoffMs\":1784376000000,\"persona\":\"heel\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.59,\"yes\":false},\"matchWinner\":{\"prob\":0.089,\"side\":\"draw\",\"team\":\"Draw\"},\"totalGoals\":{\"line\":3.5,\"prob\":0.483,\"side\":\"under\"}},\"rationale\":\"The herd dumped Draw for Vietnam. Herds drown. I'll take the side they left warm.\",\"replay\":true,\"round\":\"replay-2\",\"salt\":\"5dfe9e1e877f37e63ae81a73d9251064\",\"v\":1}",
+        "grades": {
+          "source": "market-close",
+          "matchWinner": "MISS",
+          "totalGoals": "NO ACTION",
+          "lateGoalAfter75": "NO ACTION",
+          "brier": 0.0079,
+          "detail": {
+            "homeGoals90": null,
+            "awayGoals90": null,
+            "resultSide": "home",
+            "totalGoals90": null,
+            "lateGoal": null
+          }
+        },
+        "revealTx": "3QM87q3zLyWg7mGMbdbEhvUBMv26ZJ24gSe8SHpCBVZLnf6kpzGCqs5fVQ6MNVXje5HRsVFvvRfGYkL5zocvq1Qf"
+      }
+    }
+  },
+  {
+    "id": "main-event",
+    "label": "Main Event — the Final",
+    "replay": false,
+    "fixtureId": 18257739,
+    "fixture": "Spain v Argentina",
+    "home": "Spain",
+    "away": "Argentina",
+    "kickoffMs": 1784487600000,
+    "cutoffMs": 1784416065868,
+    "slips": {
+      "steamer": {
+        "hashHex": "61af06bad5f1dc99fa72957eb11018188cbc80cd3f47eee905bc35b8df0753be",
+        "seq": "2",
+        "commitment": "7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda",
+        "commitmentLink": "https://explorer.solana.com/address/7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda?cluster=devnet",
+        "committedAt": 1784416198,
+        "revealed": false
+      },
+      "quant": {
+        "hashHex": "7d6a6c021579af795c9efac86980a7d344b59361194ce0acaa9cacea61782f16",
+        "seq": "2",
+        "commitment": "7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp",
+        "commitmentLink": "https://explorer.solana.com/address/7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp?cluster=devnet",
+        "committedAt": 1784416201,
+        "revealed": false
+      },
+      "heel": {
+        "hashHex": "9ca24c1e00fb50336cabb025255be62eed5f84dd4769b21e9b255e382d6ed816",
+        "seq": "2",
+        "commitment": "FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS",
+        "commitmentLink": "https://explorer.solana.com/address/FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS?cluster=devnet",
+        "committedAt": 1784416202,
+        "revealed": false
+      }
+    }
+  }
+]

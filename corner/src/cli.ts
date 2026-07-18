@@ -204,9 +204,10 @@ async function cmdSlip(): Promise<void> {
 
   const meta = await fetchFixtureMeta(fixtureId);
   const updates = await loadOddsUpdates(fixtureId);
-  // cutoff: kickoff for live rounds; for replays the same rule applies —
-  // engines only ever see pre-kickoff prints
-  const cutoffMs = Math.min(Number(arg("cutoff") ?? meta.kickoffMs), meta.kickoffMs);
+  // cutoff: engines only ever see pre-kickoff prints, and for a live round
+  // the honest as-of moment is seal time, not kickoff
+  const defaultCutoff = replay ? meta.kickoffMs : Math.min(Date.now(), meta.kickoffMs);
+  const cutoffMs = Math.min(Number(arg("cutoff") ?? defaultCutoff), meta.kickoffMs);
 
   const state = loadState();
   let round = state.rounds.find((r) => r.id === roundId);

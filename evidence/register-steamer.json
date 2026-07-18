@@ -1,0 +1,12 @@
+{
+  "persona": "steamer",
+  "authority": "38HadzXg6i6UkcebjHAhpei2r2ekDq7QksyveaCWNRNS",
+  "strategy": "maWf2iyHuZTDTjnBzYXeAcHvikAgngzdU1YoL6E3eKk",
+  "strategyLink": "https://explorer.solana.com/address/maWf2iyHuZTDTjnBzYXeAcHvikAgngzdU1YoL6E3eKk?cluster=devnet",
+  "params": "pit/steamer/v1|lookbackH=6|pickBy=max-prob-delta|totals=steam-side|late=goals-lambda+steam",
+  "windowStart": 1784416158,
+  "windowEnd": 1785542399,
+  "expectedPerDay": 1,
+  "tx": "4vVqrZUqzofnfKkm4KwSEGipX5pdZMqdyCR3y9oV26wyjQh6cGvCHrJEv5729nNhk9stKFkPwz6iJSHHRjKQpjCS",
+  "at": "2026-07-18T23:07:20.523Z"
+}

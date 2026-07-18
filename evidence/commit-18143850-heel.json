@@ -1,0 +1,14 @@
+{
+  "persona": "heel",
+  "round": "replay-2",
+  "replay": true,
+  "fixtureId": 18143850,
+  "seq": "1",
+  "commitment": "4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo",
+  "commitmentLink": "https://explorer.solana.com/address/4vFggnPdo8AWFf1rqiqjbW987egALvyL48U81RkbELxo?cluster=devnet",
+  "payloadHashHex": "b8258d3dd74e70da39f2ed35bd71d444b744c42f61d730cf6c1e1332c0f587f4",
+  "eventDeadline": 1784417990,
+  "committedAt": 1784416195,
+  "tx": "46ktXGVB2H78pqr5vxBoLXoDV65NcoWnFmbvsXcwtfK8FCPmpBP2NtkZD5YoTVcsir1WK1gcLeX1zwpdXT9DFpNu",
+  "at": "2026-07-18T23:09:56.955Z"
+}

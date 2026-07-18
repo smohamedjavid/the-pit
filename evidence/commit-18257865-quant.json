@@ -1,0 +1,14 @@
+{
+  "persona": "quant",
+  "round": "replay-1",
+  "replay": true,
+  "fixtureId": 18257865,
+  "seq": "0",
+  "commitment": "CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao",
+  "commitmentLink": "https://explorer.solana.com/address/CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao?cluster=devnet",
+  "payloadHashHex": "30115a49fc2b86039e2064cf1c203059872b2684f8230cf9333d72cf1faa47f3",
+  "eventDeadline": 1784417978,
+  "committedAt": 1784416180,
+  "tx": "4J5bB2WSMDt2tpKGHKAQutrZhrwkwsL6uQb9YTpmuRkzakmUJn6rWjPEC3gPdCCH1Pjh1T3CXP3mzkJDwc5d6EJM",
+  "at": "2026-07-18T23:09:42.406Z"
+}

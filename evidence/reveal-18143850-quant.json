@@ -1,0 +1,26 @@
+{
+  "persona": "quant",
+  "round": "replay-2",
+  "fixtureId": 18143850,
+  "seq": "1",
+  "commitment": "e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh",
+  "commitmentLink": "https://explorer.solana.com/address/e79a37HTCT2CVenhphs6XaeaCuMFJNyC5R4TmYiWPZh?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784376000000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Vietnam v Myanmar\",\"fixtureId\":18143850,\"kickoffMs\":1784376000000,\"persona\":\"quant\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.59,\"yes\":true},\"matchWinner\":{\"prob\":0.096,\"side\":\"draw\",\"team\":\"Draw\"},\"totalGoals\":{\"line\":3.5,\"prob\":0.529,\"side\":\"under\"}},\"rationale\":\"Two Poissons fitted to the handicap ladder make Draw 9.6%; the 1X2 says 8.9%. That is 66 basis points the market is giving away.\",\"replay\":true,\"round\":\"replay-2\",\"salt\":\"452b40e40bfa5da6a6c0a870512c594b\",\"v\":1}",
+  "payloadHashHex": "86f87fc41fb1ba5b2e91e517d681779a19c52241a1cb18d953a4864b8ee5c818",
+  "revealTx": "61YcGhxqTJQ8dd3pynCJ2bAnwyxFoJ2EBJUeReQ6NCjkkcS3S2Vna6QUn1wztVLbMdiVgSmRPpkgpsQzp3hTND2p",
+  "grades": {
+    "source": "market-close",
+    "matchWinner": "MISS",
+    "totalGoals": "NO ACTION",
+    "lateGoalAfter75": "NO ACTION",
+    "brier": 0.0092,
+    "detail": {
+      "homeGoals90": null,
+      "awayGoals90": null,
+      "resultSide": "home",
+      "totalGoals90": null,
+      "lateGoal": null
+    }
+  },
+  "at": "2026-07-18T23:10:25.676Z"
+}

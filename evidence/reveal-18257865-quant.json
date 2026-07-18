@@ -1,0 +1,26 @@
+{
+  "persona": "quant",
+  "round": "replay-1",
+  "fixtureId": 18257865,
+  "seq": "0",
+  "commitment": "CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao",
+  "commitmentLink": "https://explorer.solana.com/address/CkMihmmjLLVt5M1Za5Su2VTQEcqjkqBqeGLDdhgxUVao?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784408400000,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"France v England\",\"fixtureId\":18257865,\"kickoffMs\":1784408400000,\"persona\":\"quant\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.599,\"yes\":true},\"matchWinner\":{\"prob\":0.249,\"side\":\"away\",\"team\":\"England\"},\"totalGoals\":{\"line\":4,\"prob\":0.703,\"side\":\"under\"}},\"rationale\":\"Two Poissons fitted to the handicap ladder make England 24.9%; the 1X2 says 20.9%. That is 403 basis points the market is giving away.\",\"replay\":true,\"round\":\"replay-1\",\"salt\":\"50256dbef2da8d361a011095aed9b1e3\",\"v\":1}",
+  "payloadHashHex": "30115a49fc2b86039e2064cf1c203059872b2684f8230cf9333d72cf1faa47f3",
+  "revealTx": "4hvLRNaR1oKfa95P2i1aus4LnNuuA2qQh28XNRbmWRDhwoiP45B6bZfgMrVU93Bei34ar8uC9NKuaLBrmb6QayTE",
+  "grades": {
+    "source": "txline-scores",
+    "matchWinner": "HIT",
+    "totalGoals": "MISS",
+    "lateGoalAfter75": "HIT",
+    "brier": 0.4063,
+    "detail": {
+      "homeGoals90": 4,
+      "awayGoals90": 6,
+      "resultSide": "away",
+      "totalGoals90": 10,
+      "lateGoal": true
+    }
+  },
+  "at": "2026-07-18T23:10:17.120Z"
+}

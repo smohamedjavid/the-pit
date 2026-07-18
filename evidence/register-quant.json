@@ -1,0 +1,12 @@
+{
+  "persona": "quant",
+  "authority": "59oswTNEX8x1nb5gPnKvDLokNtLsCJCr4kMgbrd17VrX",
+  "strategy": "DjMsvs377wrK8ipA1HJWn65W3sjvNGKoiwgRS61wVJXu",
+  "strategyLink": "https://explorer.solana.com/address/DjMsvs377wrK8ipA1HJWn65W3sjvNGKoiwgRS61wVJXu?cluster=devnet",
+  "params": "pit/quant/v1|model=poisson|supremacy=ah-even-line|total=primary-ou|pickBy=max-model-edge|late=lambda*19/94*1.25",
+  "windowStart": 1784416158,
+  "windowEnd": 1785542399,
+  "expectedPerDay": 1,
+  "tx": "2Jv3QF845UQY2tRtp2QprgeP5Rjm3HvRKwcHzdXaYeL2s54F3wwrXVMJvkpeNSnf2gJ92XZVwVnK7V95KtENudRt",
+  "at": "2026-07-18T23:07:21.902Z"
+}

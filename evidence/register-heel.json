@@ -1,0 +1,12 @@
+{
+  "persona": "heel",
+  "authority": "6sh2nKyLC8S5WvWqdFW8krKPUwuwHeci2F4cQ8CcXb9q",
+  "strategy": "Hd7UsYe6rBh7Z75tfUyKnhrckoj5FS7fNp2EV8AJhuqn",
+  "strategyLink": "https://explorer.solana.com/address/Hd7UsYe6rBh7Z75tfUyKnhrckoj5FS7fNp2EV8AJhuqn?cluster=devnet",
+  "params": "pit/heel/v1|lookbackH=6|pickBy=min-prob-delta|totals=fade-steam|late=fade-crowd",
+  "windowStart": 1784416158,
+  "windowEnd": 1785542399,
+  "expectedPerDay": 1,
+  "tx": "2MXp4vk4gwq4GAhpRLJw7RArxjZU6LXkcuSKDWRxjn1cttg5GEZeXALZiiuiLGyeRg1bz5UKYv8V5AyX2i4Ei6RD",
+  "at": "2026-07-18T23:07:23.866Z"
+}
