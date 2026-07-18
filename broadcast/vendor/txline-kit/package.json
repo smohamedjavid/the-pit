@@ -1,0 +1,19 @@
+{
+  "name": "txline-kit",
+  "version": "0.1.0",
+  "description": "Community TypeScript SDK for TxLINE — TxODDS verifiable sports data on Solana",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "zod": "^3.24.0"
+  },
+  "private": true
+}
