@@ -1,0 +1,18 @@
+[workspace]
+
+[package]
+name = "tape-tests"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dev-dependencies]
+tape-program = { path = "../programs/tape-program", features = ["no-entrypoint"] }
+anchor-lang = "0.32.1"
+solana-program-test = "2.3"
+solana-sdk = "2.3"
+solana-keccak-hasher = "2.2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }

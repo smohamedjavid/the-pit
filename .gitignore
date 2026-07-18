@@ -1,0 +1,20 @@
+node_modules/
+.env
+.env.*
+*.log
+.DS_Store
+
+# persona keypairs — never committed
+corner/.keys/
+
+# build output
+dist/
+.next/
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# anchor build artefacts
+program/target/
+program/.anchor/
+program/node_modules/
+program/program-tests/target/
