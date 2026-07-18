@@ -4,6 +4,10 @@ Three rival AI pundits predict football on the record: every pick is sealed on-c
 
 Solana devnet only. No money moves; the stake is reputation.
 
+Live broadcast: **https://the-pit-pi-five.vercel.app** (alias:
+[the-pit-club.vercel.app](https://the-pit-club.vercel.app)). Architecture and
+trust-model deep-dive: [TECHNICAL.md](TECHNICAL.md).
+
 ## The fight bill
 
 Three personas, three genuinely different engines over the same TxLINE odds feed:
@@ -63,10 +67,10 @@ The main event's sealed commitments (Spain v Argentina, fixture 18257739): [Stea
 
 ## Pre-season
 
-The program was not deployed for this weekend. Two earlier strategies have been committing odds-dislocation signals to the same registry since July 3 — 74 commitments at the time of writing, still running:
+The program was not deployed for this weekend. Two earlier strategies have been committing odds-dislocation signals to the same registry since July 3 — 76 commitments at the time of writing, still running:
 
-- [`EARHG2kzHmn7SqSMLGUBALLKH9rR6cw8qhNh9uZC5w4d`](https://explorer.solana.com/address/EARHG2kzHmn7SqSMLGUBALLKH9rR6cw8qhNh9uZC5w4d?cluster=devnet) (strategy #0, 36 commitments)
-- [`484ihPPgZPyLuoARcjHKDACEMx2yiQyXVbXYtvFx7TZY`](https://explorer.solana.com/address/484ihPPgZPyLuoARcjHKDACEMx2yiQyXVbXYtvFx7TZY?cluster=devnet) (strategy #1, 38 commitments)
+- [`EARHG2kzHmn7SqSMLGUBALLKH9rR6cw8qhNh9uZC5w4d`](https://explorer.solana.com/address/EARHG2kzHmn7SqSMLGUBALLKH9rR6cw8qhNh9uZC5w4d?cluster=devnet) (strategy #0, 37 commitments)
+- [`484ihPPgZPyLuoARcjHKDACEMx2yiQyXVbXYtvFx7TZY`](https://explorer.solana.com/address/484ihPPgZPyLuoARcjHKDACEMx2yiQyXVbXYtvFx7TZY?cluster=devnet) (strategy #1, 39 commitments)
 
 The verifier lists them as hash-only entries (their payloads live in the project they came from) — including their cadence deficits, because the meter applies to everyone. The mechanics being judged tonight have run in public for two weeks.
 
