@@ -990,6 +990,13 @@ table.board .who {
   margin: 6px 0;
 }
 
+/* base58 addresses and param strings have no natural break points; let them
+   wrap so a phone-width column never has to scroll sideways */
+.prose a,
+.prose code {
+  overflow-wrap: anywhere;
+}
+
 .prose code,
 .cmd {
   font-family: var(--font-m);
@@ -1026,7 +1033,10 @@ table.board .who {
     grid-template-columns: 1fr;
   }
   .round-body {
-    grid-template-columns: 1fr;
+    /* minmax(0,1fr), not 1fr: 1fr's auto minimum refuses to shrink below the
+       nowrap verify command's min-content and drags the whole card wider than
+       the phone. A 0 minimum lets the command block scroll inside its box. */
+    grid-template-columns: minmax(0, 1fr);
   }
   .round-body > * + * {
     border-left: 0;
