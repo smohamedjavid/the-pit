@@ -37,7 +37,9 @@ const require = createRequire(import.meta.url);
 const idl = require("../corner/src/idl-tape.json");
 
 const PROGRAM_ID = new PublicKey("8GcrsgwxH4p4DzdBimyApwMex1DRwve8j3XiMWN9WbaD");
-const RPC = process.env.RPC ?? "https://solana-devnet.api.onfinality.io/public";
+// Canonical devnet endpoint by default — getProgramAccounts is heavy and some
+// public RPCs throttle it hard; override with RPC=<url> if this one is busy.
+const RPC = process.env.RPC ?? "https://api.devnet.solana.com";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 // discriminators from the IDL — account data starts with these 8 bytes
