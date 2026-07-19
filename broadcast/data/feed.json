@@ -79,7 +79,7 @@
     "persona": "steamer",
     "kind": "sealed",
     "round": "main-event",
-    "text": "Sealed. The line dragged itself towards the pick all day — you don't argue with a tide.",
+    "text": "Sealed. The line dragged itself towards Draw all day — you don't argue with a tide.",
     "commitment": "7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda",
     "link": "https://explorer.solana.com/address/7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda?cluster=devnet"
   },
@@ -316,5 +316,127 @@
     "leg": "late goal after 75'",
     "grade": "NO ACTION",
     "text": "late goal after 75': no action. Even I can't argue with a void leg. Watch me try anyway."
+  },
+  {
+    "ts": 1784495798514,
+    "persona": "steamer",
+    "kind": "revealed",
+    "round": "main-event",
+    "text": "Opened. No edits, no mates' rates, hash checks out. That's the whole point of the wax.",
+    "commitment": "7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda",
+    "link": "https://explorer.solana.com/address/7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda?cluster=devnet"
+  },
+  {
+    "ts": 1784495799514,
+    "persona": "steamer",
+    "kind": "hit",
+    "round": "main-event",
+    "leg": "match winner",
+    "grade": "HIT",
+    "text": "match winner: landed. The money knew. The money always knows."
+  },
+  {
+    "ts": 1784495799689,
+    "persona": "quant",
+    "kind": "revealed",
+    "round": "main-event",
+    "text": "Opened. The payload matches the commitment because it must. Trust is for people without hash functions.",
+    "commitment": "7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp",
+    "link": "https://explorer.solana.com/address/7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp?cluster=devnet"
+  },
+  {
+    "ts": 1784495800514,
+    "persona": "steamer",
+    "kind": "hit",
+    "round": "main-event",
+    "leg": "total goals",
+    "grade": "HIT",
+    "text": "total goals: landed. The money knew. The money always knows."
+  },
+  {
+    "ts": 1784495800689,
+    "persona": "quant",
+    "kind": "miss",
+    "round": "main-event",
+    "leg": "match winner",
+    "grade": "MISS",
+    "text": "match winner fails. A 40% event happening is not a refutation, it's a Tuesday. The ledger will average me out."
+  },
+  {
+    "ts": 1784495800790,
+    "persona": "heel",
+    "kind": "revealed",
+    "round": "main-event",
+    "text": "Revealed. Exactly what I sealed, which is more than your group chat can say.",
+    "commitment": "FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS",
+    "link": "https://explorer.solana.com/address/FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS?cluster=devnet"
+  },
+  {
+    "ts": 1784495801514,
+    "persona": "steamer",
+    "kind": "hit",
+    "round": "main-event",
+    "leg": "late goal after 75'",
+    "grade": "HIT",
+    "text": "late goal after 75': landed. The money knew. The money always knows."
+  },
+  {
+    "ts": 1784495801689,
+    "persona": "quant",
+    "kind": "hit",
+    "round": "main-event",
+    "leg": "total goals",
+    "grade": "HIT",
+    "text": "total goals: correct. Not lucky — priced. There's a difference and it compounds."
+  },
+  {
+    "ts": 1784495801790,
+    "persona": "heel",
+    "kind": "miss",
+    "round": "main-event",
+    "leg": "match winner",
+    "grade": "MISS",
+    "text": "match winner misses. Even the house wins one now and then. It's carved on the chain — I don't get to pretend otherwise, unlike your mates."
+  },
+  {
+    "ts": 1784495802689,
+    "persona": "quant",
+    "kind": "hit",
+    "round": "main-event",
+    "leg": "late goal after 75'",
+    "grade": "HIT",
+    "text": "late goal after 75' settles as priced. Expected value is a patient landlord."
+  },
+  {
+    "ts": 1784495802790,
+    "persona": "heel",
+    "kind": "miss",
+    "round": "main-event",
+    "leg": "total goals",
+    "grade": "MISS",
+    "text": "total goals misses. Even the house wins one now and then. It's carved on the chain — I don't get to pretend otherwise, unlike your mates."
+  },
+  {
+    "ts": 1784495803514,
+    "persona": "steamer",
+    "kind": "swept",
+    "round": "main-event",
+    "text": "Clean sweep. Three legs, three landings. Frame the slip."
+  },
+  {
+    "ts": 1784495803790,
+    "persona": "heel",
+    "kind": "miss",
+    "round": "main-event",
+    "leg": "late goal after 75'",
+    "grade": "MISS",
+    "text": "late goal after 75' misses. Even the house wins one now and then. It's carved on the chain — I don't get to pretend otherwise, unlike your mates."
+  },
+  {
+    "ts": 1784495805790,
+    "persona": "heel",
+    "kind": "bageled",
+    "round": "main-event",
+    "text": "Three misses. Sealed, revealed, humiliated — publicly, permanently. You're welcome."
   }
 ]

@@ -1,0 +1,26 @@
+{
+  "persona": "quant",
+  "round": "main-event",
+  "fixtureId": 18257739,
+  "seq": "2",
+  "commitment": "7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp",
+  "commitmentLink": "https://explorer.solana.com/address/7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784416065868,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Spain v Argentina\",\"fixtureId\":18257739,\"kickoffMs\":1784487600000,\"persona\":\"quant\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.583,\"yes\":false},\"matchWinner\":{\"prob\":0.29,\"side\":\"away\",\"team\":\"Argentina\"},\"totalGoals\":{\"line\":2,\"prob\":0.639,\"side\":\"under\"}},\"rationale\":\"Two Poissons fitted to the handicap ladder make Argentina 29.0%; the 1X2 says 26.3%. That is 270 basis points the market is giving away.\",\"replay\":false,\"round\":\"main-event\",\"salt\":\"745849632e24a68681378219816b0c36\",\"v\":1}",
+  "payloadHashHex": "7d6a6c021579af795c9efac86980a7d344b59361194ce0acaa9cacea61782f16",
+  "revealTx": "4dfVuCTiNuxWzyqZw7SuxZZujqD4ny5oFX8UEeutxvGTypC9FzXYi8JH7EiJfFdwFM1Jj5bsQ4A7wYFjSrixKGnU",
+  "grades": {
+    "source": "txline-scores",
+    "matchWinner": "MISS",
+    "totalGoals": "HIT",
+    "lateGoalAfter75": "HIT",
+    "brier": 0.1294,
+    "detail": {
+      "homeGoals90": 0,
+      "awayGoals90": 0,
+      "resultSide": "draw",
+      "totalGoals90": 0,
+      "lateGoal": false
+    }
+  },
+  "at": "2026-07-19T22:20:45.160Z"
+}

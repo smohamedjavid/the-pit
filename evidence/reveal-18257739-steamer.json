@@ -1,0 +1,26 @@
+{
+  "persona": "steamer",
+  "round": "main-event",
+  "fixtureId": 18257739,
+  "seq": "2",
+  "commitment": "7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda",
+  "commitmentLink": "https://explorer.solana.com/address/7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784416065868,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Spain v Argentina\",\"fixtureId\":18257739,\"kickoffMs\":1784487600000,\"persona\":\"steamer\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.587,\"yes\":false},\"matchWinner\":{\"prob\":0.316,\"side\":\"draw\",\"team\":\"Draw\"},\"totalGoals\":{\"line\":2,\"prob\":0.431,\"side\":\"under\"}},\"rationale\":\"Money moved 7bps onto Draw in six hours. I go where it goes.\",\"replay\":false,\"round\":\"main-event\",\"salt\":\"5bd57bd46572e57d8ba526aacfac46d5\",\"v\":1}",
+  "payloadHashHex": "61af06bad5f1dc99fa72957eb11018188cbc80cd3f47eee905bc35b8df0753be",
+  "revealTx": "2F67fwG9fFZahSNwaYygtmiAwSQsNJuQonaUp7SnfPbwopKhD1fybXvHoiLRRcFHZW8TaP8ReeAdJjP6REiU7gEY",
+  "grades": {
+    "source": "txline-scores",
+    "matchWinner": "HIT",
+    "totalGoals": "HIT",
+    "lateGoalAfter75": "HIT",
+    "brier": 0.3207,
+    "detail": {
+      "homeGoals90": 0,
+      "awayGoals90": 0,
+      "resultSide": "draw",
+      "totalGoals90": 0,
+      "lateGoal": false
+    }
+  },
+  "at": "2026-07-19T22:20:45.156Z"
+}

@@ -1,0 +1,26 @@
+{
+  "persona": "heel",
+  "round": "main-event",
+  "fixtureId": 18257739,
+  "seq": "2",
+  "commitment": "FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS",
+  "commitmentLink": "https://explorer.solana.com/address/FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS?cluster=devnet",
+  "payloadCanonical": "{\"basis\":{\"asOfMs\":1784416065868,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Spain v Argentina\",\"fixtureId\":18257739,\"kickoffMs\":1784487600000,\"persona\":\"heel\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.583,\"yes\":true},\"matchWinner\":{\"prob\":0.263,\"side\":\"away\",\"team\":\"Argentina\"},\"totalGoals\":{\"line\":2,\"prob\":0.569,\"side\":\"over\"}},\"rationale\":\"The herd dumped Argentina for Draw. Herds drown. I'll take the side they left warm.\",\"replay\":false,\"round\":\"main-event\",\"salt\":\"9c64263c54df6314a3cd6f34c03296cd\",\"v\":1}",
+  "payloadHashHex": "9ca24c1e00fb50336cabb025255be62eed5f84dd4769b21e9b255e382d6ed816",
+  "revealTx": "4iGursiqzzoTNVyqKneUjhq1GY3bnWiiFQbe6JpQ8dwQYEG7wwVaN9crHR4Dmb26o8d19yVFC1yhGd7pLPtcJpHE",
+  "grades": {
+    "source": "txline-scores",
+    "matchWinner": "MISS",
+    "totalGoals": "MISS",
+    "lateGoalAfter75": "MISS",
+    "brier": 0.2443,
+    "detail": {
+      "homeGoals90": 0,
+      "awayGoals90": 0,
+      "resultSide": "draw",
+      "totalGoals90": 0,
+      "lateGoal": false
+    }
+  },
+  "at": "2026-07-19T22:20:45.160Z"
+}

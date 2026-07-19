@@ -372,7 +372,54 @@
         "commitment": "7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda",
         "commitmentLink": "https://explorer.solana.com/address/7MU6sVRMwgJQz1afbzKniqtk7wP1fLyjy9hEDTnTMnda?cluster=devnet",
         "committedAt": 1784416198,
-        "revealed": false
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "steamer",
+          "round": "main-event",
+          "replay": false,
+          "fixtureId": 18257739,
+          "fixture": "Spain v Argentina",
+          "kickoffMs": 1784487600000,
+          "picks": {
+            "matchWinner": {
+              "side": "draw",
+              "team": "Draw",
+              "prob": 0.316
+            },
+            "totalGoals": {
+              "line": 2,
+              "side": "under",
+              "prob": 0.431
+            },
+            "lateGoalAfter75": {
+              "yes": false,
+              "prob": 0.587
+            }
+          },
+          "rationale": "Money moved 7bps onto Draw in six hours. I go where it goes.",
+          "basis": {
+            "asOfMs": 1784416065868,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "5bd57bd46572e57d8ba526aacfac46d5"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784416065868,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Spain v Argentina\",\"fixtureId\":18257739,\"kickoffMs\":1784487600000,\"persona\":\"steamer\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.587,\"yes\":false},\"matchWinner\":{\"prob\":0.316,\"side\":\"draw\",\"team\":\"Draw\"},\"totalGoals\":{\"line\":2,\"prob\":0.431,\"side\":\"under\"}},\"rationale\":\"Money moved 7bps onto Draw in six hours. I go where it goes.\",\"replay\":false,\"round\":\"main-event\",\"salt\":\"5bd57bd46572e57d8ba526aacfac46d5\",\"v\":1}",
+        "grades": {
+          "source": "txline-scores",
+          "matchWinner": "HIT",
+          "totalGoals": "HIT",
+          "lateGoalAfter75": "HIT",
+          "brier": 0.3207,
+          "detail": {
+            "homeGoals90": 0,
+            "awayGoals90": 0,
+            "resultSide": "draw",
+            "totalGoals90": 0,
+            "lateGoal": false
+          }
+        },
+        "revealTx": "2F67fwG9fFZahSNwaYygtmiAwSQsNJuQonaUp7SnfPbwopKhD1fybXvHoiLRRcFHZW8TaP8ReeAdJjP6REiU7gEY"
       },
       "quant": {
         "hashHex": "7d6a6c021579af795c9efac86980a7d344b59361194ce0acaa9cacea61782f16",
@@ -380,7 +427,54 @@
         "commitment": "7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp",
         "commitmentLink": "https://explorer.solana.com/address/7jLp38qP7KuuZK139NUDCHC1ce2EdPiXR5ZoS9eqhMCp?cluster=devnet",
         "committedAt": 1784416201,
-        "revealed": false
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "quant",
+          "round": "main-event",
+          "replay": false,
+          "fixtureId": 18257739,
+          "fixture": "Spain v Argentina",
+          "kickoffMs": 1784487600000,
+          "picks": {
+            "matchWinner": {
+              "side": "away",
+              "team": "Argentina",
+              "prob": 0.29
+            },
+            "totalGoals": {
+              "line": 2,
+              "side": "under",
+              "prob": 0.639
+            },
+            "lateGoalAfter75": {
+              "yes": false,
+              "prob": 0.583
+            }
+          },
+          "rationale": "Two Poissons fitted to the handicap ladder make Argentina 29.0%; the 1X2 says 26.3%. That is 270 basis points the market is giving away.",
+          "basis": {
+            "asOfMs": 1784416065868,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "745849632e24a68681378219816b0c36"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784416065868,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Spain v Argentina\",\"fixtureId\":18257739,\"kickoffMs\":1784487600000,\"persona\":\"quant\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.583,\"yes\":false},\"matchWinner\":{\"prob\":0.29,\"side\":\"away\",\"team\":\"Argentina\"},\"totalGoals\":{\"line\":2,\"prob\":0.639,\"side\":\"under\"}},\"rationale\":\"Two Poissons fitted to the handicap ladder make Argentina 29.0%; the 1X2 says 26.3%. That is 270 basis points the market is giving away.\",\"replay\":false,\"round\":\"main-event\",\"salt\":\"745849632e24a68681378219816b0c36\",\"v\":1}",
+        "grades": {
+          "source": "txline-scores",
+          "matchWinner": "MISS",
+          "totalGoals": "HIT",
+          "lateGoalAfter75": "HIT",
+          "brier": 0.1294,
+          "detail": {
+            "homeGoals90": 0,
+            "awayGoals90": 0,
+            "resultSide": "draw",
+            "totalGoals90": 0,
+            "lateGoal": false
+          }
+        },
+        "revealTx": "4dfVuCTiNuxWzyqZw7SuxZZujqD4ny5oFX8UEeutxvGTypC9FzXYi8JH7EiJfFdwFM1Jj5bsQ4A7wYFjSrixKGnU"
       },
       "heel": {
         "hashHex": "9ca24c1e00fb50336cabb025255be62eed5f84dd4769b21e9b255e382d6ed816",
@@ -388,7 +482,54 @@
         "commitment": "FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS",
         "commitmentLink": "https://explorer.solana.com/address/FwFHY8zD3SiH9hYohw6yUFPnR1kYQpXRuiyuyY6wYxbS?cluster=devnet",
         "committedAt": 1784416202,
-        "revealed": false
+        "revealed": true,
+        "slip": {
+          "v": 1,
+          "persona": "heel",
+          "round": "main-event",
+          "replay": false,
+          "fixtureId": 18257739,
+          "fixture": "Spain v Argentina",
+          "kickoffMs": 1784487600000,
+          "picks": {
+            "matchWinner": {
+              "side": "away",
+              "team": "Argentina",
+              "prob": 0.263
+            },
+            "totalGoals": {
+              "line": 2,
+              "side": "over",
+              "prob": 0.569
+            },
+            "lateGoalAfter75": {
+              "yes": true,
+              "prob": 0.583
+            }
+          },
+          "rationale": "The herd dumped Argentina for Draw. Herds drown. I'll take the side they left warm.",
+          "basis": {
+            "asOfMs": 1784416065868,
+            "source": "txline-stableprice-devnet"
+          },
+          "salt": "9c64263c54df6314a3cd6f34c03296cd"
+        },
+        "canonical": "{\"basis\":{\"asOfMs\":1784416065868,\"source\":\"txline-stableprice-devnet\"},\"fixture\":\"Spain v Argentina\",\"fixtureId\":18257739,\"kickoffMs\":1784487600000,\"persona\":\"heel\",\"picks\":{\"lateGoalAfter75\":{\"prob\":0.583,\"yes\":true},\"matchWinner\":{\"prob\":0.263,\"side\":\"away\",\"team\":\"Argentina\"},\"totalGoals\":{\"line\":2,\"prob\":0.569,\"side\":\"over\"}},\"rationale\":\"The herd dumped Argentina for Draw. Herds drown. I'll take the side they left warm.\",\"replay\":false,\"round\":\"main-event\",\"salt\":\"9c64263c54df6314a3cd6f34c03296cd\",\"v\":1}",
+        "grades": {
+          "source": "txline-scores",
+          "matchWinner": "MISS",
+          "totalGoals": "MISS",
+          "lateGoalAfter75": "MISS",
+          "brier": 0.2443,
+          "detail": {
+            "homeGoals90": 0,
+            "awayGoals90": 0,
+            "resultSide": "draw",
+            "totalGoals90": 0,
+            "lateGoal": false
+          }
+        },
+        "revealTx": "4iGursiqzzoTNVyqKneUjhq1GY3bnWiiFQbe6JpQ8dwQYEG7wwVaN9crHR4Dmb26o8d19yVFC1yhGd7pLPtcJpHE"
       }
     }
   }
