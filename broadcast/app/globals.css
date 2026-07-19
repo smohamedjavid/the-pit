@@ -405,7 +405,9 @@ a:hover {
 
 .round-body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* minmax(0,1fr) lets the sealed-command block scroll instead of forcing the
+     track wider than its third of the card */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
 }
 
@@ -605,6 +607,201 @@ a:hover {
   .ticker-track {
     animation: none;
     flex-wrap: wrap;
+  }
+}
+
+/* ── per-slip verify affordance ───────────────────────────── */
+
+.verify-strip {
+  margin-top: 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper-3);
+  box-shadow: 2px 3px 0 rgba(26, 21, 15, 0.18);
+  padding: 8px 10px 10px;
+}
+
+.vs-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 5px;
+  margin-bottom: 7px;
+}
+
+.vs-title {
+  font-family: var(--font-g);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.vs-sub {
+  font-family: var(--font-g);
+  font-weight: 700;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blood);
+  margin-left: auto;
+}
+
+.vs-facts {
+  font-size: 10.5px;
+  margin-bottom: 8px;
+}
+
+.vs-facts > div {
+  display: flex;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.vs-facts > div + div {
+  border-top: 1px dashed var(--ink-3);
+  padding-top: 4px;
+  margin-top: 2px;
+}
+
+.vs-facts dt {
+  font-family: var(--font-g);
+  font-weight: 700;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  flex: 0 0 50px;
+  padding-top: 1px;
+}
+
+.vs-facts dd {
+  font-family: var(--font-m);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.vs-facts .vs-hash {
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+
+.vs-cmd-row {
+  display: flex;
+  align-items: stretch;
+  gap: 7px;
+}
+
+.vs-cmd {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--font-m);
+  font-size: 11.5px;
+  line-height: 1.4;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 7px 9px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* copy control: an ink stamp that slams into a wax seal on success */
+.vs-copy {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 66px;
+  cursor: pointer;
+  font-family: var(--font-d);
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2.5px solid var(--ink);
+  border-radius: 3px;
+  padding: 0 10px;
+  transform: rotate(-3deg);
+  transition: transform 0.08s ease, color 0.08s ease, border-color 0.08s ease;
+}
+
+.vs-copy:hover {
+  color: var(--blood);
+  border-color: var(--blood);
+}
+
+.vs-copy:active {
+  transform: rotate(-3deg) scale(0.92);
+}
+
+.vs-copy.done {
+  color: var(--paper);
+  background: radial-gradient(circle at 34% 30%, var(--blood-2), var(--blood) 62%, #7c150f 100%);
+  border-color: #7c150f;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.22), inset 0 -3px 4px rgba(0, 0, 0, 0.32);
+  animation: stamp-press 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes stamp-press {
+  0% {
+    transform: rotate(-15deg) scale(1.5);
+    opacity: 0.35;
+  }
+  100% {
+    transform: rotate(-3deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* fight-bill invitation to run the audit */
+.verify-callout {
+  margin-top: 22px;
+  border: 3px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 4px 5px 0 rgba(26, 21, 15, 0.22);
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.verify-callout p {
+  flex: 1 1 260px;
+  min-width: 0;
+  font-family: var(--font-g);
+  font-weight: 700;
+  font-size: clamp(12px, 1.7vw, 14.5px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.verify-callout p strong {
+  color: var(--blood-2);
+}
+
+.verify-callout a {
+  margin-left: auto;
+  font-family: var(--font-g);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration-color: var(--blood-2);
+}
+
+.verify-callout a:hover {
+  color: var(--blood-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vs-copy.done {
+    animation: none;
   }
 }
 

@@ -28,6 +28,11 @@ export default function Verify() {
           the registry program, decodes the raw bytes, and prints a PASS/FAIL table. No API
           keys, no env vars, under three minutes.
         </p>
+        <p>
+          Only want to check the one slip in front of you? Every sealed slip on the bill carries
+          its own copy-paste line — <code>npx tsx scripts/verify.ts --commitment &lt;account&gt;</code>{" "}
+          audits that single commitment and nothing else. Same zero credentials.
+        </p>
 
         <h3>2 · What the program enforces</h3>
         <ol>

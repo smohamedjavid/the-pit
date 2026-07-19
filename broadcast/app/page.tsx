@@ -75,6 +75,14 @@ export default function Bill() {
         </section>
       ) : null}
 
+      <section className="verify-callout" aria-label="verify invitation">
+        <p>
+          Every slip below was sealed on-chain before kickoff.{" "}
+          <strong>Don&apos;t take our word</strong> — copy any line and run it.
+        </p>
+        <a href="/verify">how to verify ↗</a>
+      </section>
+
       <section className="sect" aria-label="tale of the tape">
         <div className="sect-head">
           <h2>Tale of the tape</h2>

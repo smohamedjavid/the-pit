@@ -1,4 +1,5 @@
 import type { PublicSlip, Round } from "../lib/data";
+import { VerifyStrip } from "./verify-slip";
 
 export const fmtUtc = (ms: number): string =>
   new Date(ms).toISOString().slice(0, 16).replace("T", " · ") + " UTC";
@@ -57,16 +58,15 @@ export function Envelope({
           <div className="sealed-at">
             Sealed{slip.committedAt ? ` ${fmtUtcSec(slip.committedAt)}` : ""}
           </div>
-          <div className="env-hash">
-            keccak256 {slip.hashHex}
-            {slip.commitmentLink ? (
-              <>
-                {" — "}
-                <a href={slip.commitmentLink}>commitment account</a>
-              </>
-            ) : null}
-          </div>
+          <div className="env-hash">keccak256 {slip.hashHex.slice(0, 20)}…</div>
         </div>
+        {slip.commitment ? (
+          <VerifyStrip
+            commitment={slip.commitment}
+            hashHex={slip.hashHex}
+            link={slip.commitmentLink}
+          />
+        ) : null}
       </div>
     );
   }
@@ -99,13 +99,19 @@ export function Envelope({
         </div>
         <div className="slip-rationale">&ldquo;{slip.slip.rationale}&rdquo;</div>
         <div className="slip-meta">
-          sealed {slip.committedAt ? fmtUtcSec(slip.committedAt) : "—"} ·{" "}
-          {slip.commitmentLink ? <a href={slip.commitmentLink}>on-chain commitment</a> : null}
+          sealed {slip.committedAt ? fmtUtcSec(slip.committedAt) : "—"}
           {g?.source === "market-close"
             ? " · graded from the market's closing prints — devnet retains no score record for this fixture, so only the winner leg settles"
             : null}
         </div>
       </div>
+      {slip.commitment ? (
+        <VerifyStrip
+          commitment={slip.commitment}
+          hashHex={slip.hashHex}
+          link={slip.commitmentLink}
+        />
+      ) : null}
     </div>
   );
 }

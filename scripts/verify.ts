@@ -3,6 +3,12 @@
  *
  *   npx tsx scripts/verify.ts            # public devnet RPC, no env needed
  *   RPC=<url> npx tsx scripts/verify.ts  # optional RPC override
+ *   npx tsx scripts/verify.ts --commitment <pubkey>  # audit ONE commitment account
+ *   npx tsx scripts/verify.ts --strategy <pubkey>    # audit ONE strategy + its commits
+ *
+ * The two focus flags are additive filters only: with no args the full audit
+ * runs exactly as before. They let a broadcast link hand a judge the exact
+ * one-liner that checks the single slip in front of them.
  *
  * What it proves, from chain state alone plus this repo's revealed payloads:
  *   1. every Strategy account on the registry (who promised what, when)
@@ -102,10 +108,38 @@ function personaParams(): Map<string, { persona: string; params: string }> {
 const short = (s: string) => `${s.slice(0, 4)}…${s.slice(-4)}`;
 const ts = (sec: number) => new Date(sec * 1000).toISOString().replace(".000Z", "Z");
 
+// Optional focus filters. Backward compatible: no flags → full audit.
+// Accepts `--commitment <pubkey>` / `--commitment=<pubkey>` (and --strategy).
+function parseFocus(argv: string[]): { commitment?: string; strategy?: string } {
+  const out: { commitment?: string; strategy?: string } = {};
+  for (let i = 0; i < argv.length; i++) {
+    const m = /^--(commitment|strategy)(?:=(.+))?$/.exec(argv[i]);
+    if (!m) continue;
+    const key = m[1] as "commitment" | "strategy";
+    const val = m[2] ?? argv[++i];
+    if (!val || val.startsWith("--")) {
+      console.error(`--${key} needs a base58 pubkey, e.g. --${key} <account>`);
+      process.exit(1);
+    }
+    try {
+      new PublicKey(val);
+    } catch {
+      console.error(`--${key}: "${val}" is not a valid base58 pubkey`);
+      process.exit(1);
+    }
+    out[key] = val;
+  }
+  return out;
+}
+
 async function main() {
+  const focus = parseFocus(process.argv.slice(2));
   console.log(`THE PIT — registry verifier`);
   console.log(`program ${PROGRAM_ID.toBase58()} (devnet)`);
-  console.log(`rpc     ${RPC}\n`);
+  console.log(`rpc     ${RPC}`);
+  if (focus.commitment) console.log(`focus   commitment ${focus.commitment}`);
+  if (focus.strategy) console.log(`focus   strategy ${focus.strategy}`);
+  console.log("");
 
   const conn = new Connection(RPC, "confirmed");
   const coder = new BorshCoder(idl);
@@ -154,6 +188,31 @@ async function main() {
   strategies.sort((a, b) => a.windowStart - b.windowStart);
   commitments.sort((a, b) => a.committedAt - b.committedAt);
 
+  // Focus filters narrow only what is displayed and hash-checked; cadence math
+  // below still runs over the full commitment set so "delivered" stays honest.
+  let shownStrategies = strategies;
+  let shownCommitments = commitments;
+  if (focus.commitment) {
+    shownCommitments = commitments.filter((c) => c.address === focus.commitment);
+    const owners = new Set(shownCommitments.map((c) => c.strategy));
+    shownStrategies = strategies.filter((s) => owners.has(s.address));
+  }
+  if (focus.strategy) {
+    shownStrategies = shownStrategies.filter((s) => s.address === focus.strategy);
+    shownCommitments = shownCommitments.filter((c) => c.strategy === focus.strategy);
+  }
+  if (
+    (focus.commitment || focus.strategy) &&
+    shownStrategies.length === 0 &&
+    shownCommitments.length === 0
+  ) {
+    console.error(
+      `no account on ${PROGRAM_ID.toBase58()} matches the requested focus — ` +
+        `check the pubkey is a commitment/strategy on this program (devnet)`
+    );
+    process.exit(1);
+  }
+
   const payloads = publishedPayloads();
   const params = personaParams();
   const nowSec = Math.floor(Date.now() / 1000);
@@ -162,8 +221,8 @@ async function main() {
   let fail = 0;
   let hashOnly = 0;
 
-  console.log(`── strategies (${strategies.length}) ──────────────────────────────────────`);
-  for (const s of strategies) {
+  console.log(`── strategies (${shownStrategies.length}) ──────────────────────────────────────`);
+  for (const s of shownStrategies) {
     const known = params.get(s.address);
     let paramsNote = "params hash sealed on-chain (preimage not published)";
     if (known) {
@@ -192,8 +251,8 @@ async function main() {
     console.log(`  ${paramsNote}`);
   }
 
-  console.log(`\n── commitments (${commitments.length}) ─────────────────────────────────────`);
-  for (const c of commitments) {
+  console.log(`\n── commitments (${shownCommitments.length}) ─────────────────────────────────────`);
+  for (const c of shownCommitments) {
     const early = c.committedAt < c.eventDeadline;
     let verdict: string;
     if (!c.revealed) {
@@ -215,12 +274,12 @@ async function main() {
       }
     }
     console.log(
-      `${short(c.strategy)}#${c.seq}  fixture ${c.fixtureId}  sealed ${ts(c.committedAt)}  ${early ? "pre-deadline ok" : "DEADLINE VIOLATION"}  ${verdict}`
+      `${short(c.address)}  ${short(c.strategy)}#${c.seq}  fixture ${c.fixtureId}  sealed ${ts(c.committedAt)}  ${early ? "pre-deadline ok" : "DEADLINE VIOLATION"}  ${verdict}`
     );
   }
 
   console.log(`\n── verdict ─────────────────────────────────────────────────`);
-  console.log(`strategies: ${strategies.length}   commitments: ${commitments.length}   undecodable: ${undecodable}`);
+  console.log(`strategies: ${shownStrategies.length}   commitments: ${shownCommitments.length}   undecodable: ${undecodable}`);
   console.log(`hash recomputations — PASS: ${pass}   FAIL: ${fail}   hash-only (payload not in repo): ${hashOnly}`);
   console.log(
     fail === 0 && undecodable === 0
